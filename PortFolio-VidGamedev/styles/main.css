@@ -12,6 +12,7 @@ body, .header__title {
 body{
     background-color: #aaa;
     width: 100vw;
+    box-sizing: border-box;
 }
 
 /*
@@ -102,3 +103,86 @@ Barra de navegacion
     background-color: #2a2a2a;
     color: #fff;
 }
+
+/*
+==============================================================================
+MAIN SECTION
+==============================================================================
+*/
+
+.main__grid{
+    display: grid;
+    grid-template-rows: repeat(3, minmax(1fr, auto));
+    box-sizing: border-box;
+}
+
+.main-grid__aboutMe{
+    display: grid;
+    grid-template-columns: minmax(200px, 2fr) minmax(200px, 2fr);
+    box-sizing: border-box;
+}
+
+.aboutMe__card {
+    background-color: #8af;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1.5rem;
+    max-width: 350px;
+    min-width: 250px;
+    justify-self: center;
+
+    border-radius: 2.5rem;
+    border: 0.5rem solid #adf;
+    box-shadow: 0 0 1rem 0 #0004;
+}
+
+
+.aboutMe-card__img{
+    display: flex;
+    justify-content: center
+}
+
+.aboutMe__card p {
+    display: inline-block;
+    margin: 1.5rem 2.5rem;
+    font-size: 1em;
+}
+
+.aboutMe__card > div > img {
+    max-width: 80%;
+    border-radius: 35%;
+    object-fit: cover; 
+}
+
+.aboutMe__text {
+    align-self: center;
+    max-width: 550px;
+    margin-right: 2.5rem;
+    box-sizing: border-box;
+}
+
+.aboutMe__text p {
+    font-size: 1.1rem
+}
+
+.aboutMe__text h3 {
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 780px) {
+    .main-grid__aboutMe{
+        grid-template-columns: 1fr;
+    }
+    .aboutMe__text{
+        margin: 1.5rem 2.5rem
+    }
+
+    .aboutMe__card {
+        max-width: 350px;
+        min-width: 250px;
+    }
+
+}
+
