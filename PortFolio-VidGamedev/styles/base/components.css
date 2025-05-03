@@ -1,0 +1,22 @@
+/* =========================================================
+   COMPONENTES REUTILIZABLES
+========================================================= */
+
+.skill__title {
+    grid-area: 1 / 2 / 2 / 5;
+    height: 50%;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #9376e3;
+}
+
+.skill__level {
+    color: #0a0a0a;
+    height: 85%;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

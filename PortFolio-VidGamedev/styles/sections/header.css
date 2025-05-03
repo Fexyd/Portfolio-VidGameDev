@@ -1,0 +1,53 @@
+/*
+----------------------------
+Principal - header
+----------------------------
+*/
+
+.header {
+    width: 100%;
+    color: #9376e3;
+}
+
+.header__grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header-grid__item {
+    display: flex;
+    align-items: center;
+}
+
+.header-grid__item a {
+    padding: 1rem;
+    text-decoration: none;
+    color: #9376e3;
+    font-weight: 800;
+    transition: color .2s ease;
+}
+
+.header-grid__item a:hover {
+    color: #fff;
+}
+
+.item--contactMe {
+    margin-right: auto;
+}
+
+.item--contactMe a {
+    background-color: #9376e3;
+    padding: 0.8rem;
+    margin: 0.6rem;
+    border-radius: 1rem;
+    color: #fff;
+    transition: background-color .35s ease, color .35s ease;
+}
+
+.item--contactMe a:hover {
+    background-color: #9376e344;
+    color: #d5c6ff;
+}

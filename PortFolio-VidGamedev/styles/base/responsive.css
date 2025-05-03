@@ -1,0 +1,52 @@
+/* =========================================================
+   RESPONSIVE STYLES
+========================================================= */
+
+@media screen and (max-width: 1000px) {
+    .header__grid {
+        justify-content: space-between;
+    }
+    .item--contactMe {
+        margin-right: auto;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .header__grid {
+        justify-content: space-between;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .main__grid {
+        margin-top: 1rem;
+        grid-template-columns: repeat(1, minmax(auto, 400px));
+        grid-template-rows: repeat(16, minmax(auto, auto));
+    }
+
+    .aboutMe--card {
+        grid-area:  1 / 1 / 5 / 2;
+    }
+
+    .aboutMe__img img {
+        width: 80%;
+    }
+
+    .aboutMe--text {
+        text-align: center;
+        flex-direction: column;
+        grid-area: 5 / 1 / 7 / 2 ;
+    }
+
+    .aboutMe--title, .aboutMe--level {
+        display: none;
+    }
+
+    .aboutMe--stats {
+        grid-area: 7 / 2 / 11 / 1;
+    }
+
+    .header__grid {
+        grid-template-columns: repeat(3, minmax(50px, 250px));
+    }
+}

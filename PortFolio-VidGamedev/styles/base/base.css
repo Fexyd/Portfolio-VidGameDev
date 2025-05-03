@@ -1,0 +1,23 @@
+/* =========================================================
+   BASE - Reset, tipografía, colores globales
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, .header__title {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #121212;
+    width: 100%;
+    box-sizing: border-box;
+    color: #e0e0e0;
+}
+
+img {
+    width: 100%;
+}
