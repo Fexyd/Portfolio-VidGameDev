@@ -7,10 +7,11 @@ importacion de archivos
 @import url("base/base.css");
 @import url("base/components.css");
 @import url("base/layout.css");
-@import url("base/responsive.css");
 
 @import url("sections/header.css");
 @import url("sections/hero.css");
 @import url("sections/about.css");
 @import url("sections/services.css");
 @import url("sections/projects.css");
+
+@import url("base/responsive.css");

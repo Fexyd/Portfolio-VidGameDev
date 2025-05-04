@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
     <head>
+        <link rel="stylesheet" href="styles/base/responsive.css">
         <link rel="stylesheet" href="styles/main.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     </head>
 
     <body>
+        
         <header class="header">
 
             <nav class="header__grid">
@@ -17,11 +19,12 @@
             </nav>
 
         </header>
+
         <main class="main">
 
             <section class="main__hero-image main--item">
                 <div class="hero-image__text">
-                    <h1>FEXYD</h1>
+                    <h1 id="hero--title">FEXYD</h1>
                     <h2>Portfolio</h2>
                 </div>
             </section>
@@ -29,11 +32,11 @@
             <div class="main__grid main--item">
 
                 <section class="main__aboutMe aboutMe--card"> 
-                    <h2>Fexyd</h2>
+                    <h2 id="hero--title">Fexyd</h2>
                     <div class="aboutMe__img">
                         <img src="images/main/WhatsApp Image 2025-04-09 at 10.13.15 PM.jpeg" alt="">
                     </div>
-                    <p>
+                    <p id="description_card">
                         Hi! I'm Fexyd — an indie game developer with a year and a half of hands-on experience in the industry, all self-taught. I'm passionate about bringing ideas to life, and I'd love to help you turn yours into reality. 🕹
                     </p>
                 </section>
@@ -43,7 +46,7 @@
                 </section>
 
                 <section class="main__aboutMe aboutMe--text">
-                    <p>
+                    <p id="description">
                         Hey, I'm Fexyd — indie game developer, part-time artist, full-time code wrangler (because I love wrestling bugs until things finally work).<br><br>
                         I'm 16, and I've been into game development since I was 8, learning everything on my own — from programming to design and art. Whatever it takes to bring an idea to life.<br><br>
                         I'm not a company, but I work with the same level of commitment. I’m team-friendly, self-demanding, and always respectful. If the project matters, so do I.<br><br>
@@ -124,5 +127,6 @@
         </main>
 
 
+        <script src="javaScript/main.js"></script>
     </body>
 </html>
