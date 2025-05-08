@@ -13,6 +13,11 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    animation-range-start: contain 100%;
+    animation-range-end: cover 100%;
+    animation: hero-anim both;
+    animation-timeline: scroll();
 }
 
 .main__hero-image > div {
@@ -31,4 +36,14 @@
     margin: 0;
     margin-top: 1rem;
     font-size: 2.5rem;
+}
+
+@keyframes hero-anim {
+    from {
+        background-position: center;
+    }
+    to {
+        background-position: center 500px;
+    }
+    
 }

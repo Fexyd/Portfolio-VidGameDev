@@ -11,8 +11,8 @@
 .main__grid {
     margin: 2.5rem 0;
     display: grid;
-    grid-template-columns: repeat(8, minmax(auto, 150px));
-    grid-template-rows: repeat(8, minmax(100px, auto));
+    grid-template-columns: repeat(9, minmax(auto, 150px));
+    grid-template-rows: repeat(10, minmax(100px, auto));
     box-sizing: border-box;
     gap: 10px;
     justify-content: center; 

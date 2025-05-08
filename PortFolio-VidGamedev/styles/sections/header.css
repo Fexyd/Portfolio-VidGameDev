@@ -7,6 +7,13 @@ Principal - header
 .header {
     width: 100%;
     color: #9376e3;
+    background-color: inherit;
+    position: sticky;
+    top: 0;
+
+    animation: sticky-header both;
+    animation-timeline: scroll();
+    animation-range: 2.5% 20%;
 }
 
 .header__grid {
@@ -23,11 +30,16 @@ Principal - header
 }
 
 .header-grid__item a {
+    text-align: center;
     padding: 1rem;
     text-decoration: none;
     color: #9376e3;
     font-weight: 800;
     transition: color .2s ease;
+    
+    animation: buttons-padding both;
+    animation-timeline: scroll();
+    animation-range: 2.5% 20%;
 }
 
 .header-grid__item a:hover {
@@ -50,4 +62,27 @@ Principal - header
 .item--contactMe a:hover {
     background-color: #9376e344;
     color: #d5c6ff;
+}
+
+
+@keyframes sticky-header {
+    from {
+        background-color: inherit;
+    }
+
+    to {
+        background-color: #121212dd;
+    }
+    
+}
+
+@keyframes buttons-padding {
+    from {
+        padding: 0.8rem;
+        border: 1rem;
+    }
+    to {
+        padding: 0.4rem 0.6rem;
+        border-radius: 0.8rem;
+    }
 }

@@ -17,19 +17,19 @@
 }
 
 .aboutMe--card {
-    grid-area: 1 / 2 / 5 / 4;
+    grid-area: 1 / 2 / span 3 / span 3;
 }
 
 .aboutMe--text {
-    grid-area: 2 / 4 / 5 / 8;
+    grid-area: 2 / 5 / span 2 / span 4;
 }
 
 .aboutMe--title {
-    grid-area: 1 / 4 / 2 / 7;
+    grid-area: 1 / 5 / span 1 / span 3;
 }
 
 .aboutMe--level {
-    grid-area: 1 / 7 / 2 / 8;
+    grid-area: 1 / 8 / span 1 / span 1;
 }
 
 .aboutMe__img {
@@ -48,7 +48,7 @@
 
 .aboutMe--card p {
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 80%;
     line-height: 1.5;
     margin: 0;
 }
@@ -56,7 +56,7 @@
 .aboutMe--text p {
     padding: 1rem;
     margin: 0;
-    font-size: 1rem;
+    font-size: 80%;
     line-height: 1.6;
 }
 
@@ -65,13 +65,19 @@
    STATS SECTION
 ========================================================= */
 
+.skill__title {
+    grid-area: 1 / 2 / span 1 / span 5;
+    width: 100%;
+    height: 50%;
+}
+
 .aboutMe--stats {
-    grid-area: 5 / 2 / 9 / 8;
+    grid-area: 4 / 2 / span 6 / span 7;
     display: grid;
-    gap: 1rem;
+    gap: 0.5rem;
     padding: 1rem;
-    grid-template-columns: repeat(5, minmax(100px, 1fr));
-    grid-template-rows: repeat(4, minmax(auto, 100px)); 
+    grid-template-columns: subgrid;
+    grid-template-rows: subgrid; 
     background-color: #0a0a0a;
     border-radius: 1rem;
 }
@@ -86,7 +92,7 @@
 /* Estilo compartido */
 .skill__level {
     color: #0a0a0a;
-    height: 85%;
+    height: 55%;
     border-radius: 1rem;
     display: flex;
     justify-content: center;
@@ -95,51 +101,63 @@
     padding: 0.5rem;
 }
 
+.skill_1--text, .skill_2--text, .skill_3--text, .skill_4--text {
+    margin: 0.8rem;
+}
+.skill_1--text p, .skill_2--text p, .skill_3--text p, .skill_4--text p {
+    margin: 0;
+}
+
+
 /* HABILIDAD 1 */
 .skill_1--img {
-    grid-area: 2 / 1 / 3 / 2;
+    grid-area: 2 / 2  / span 1 / span 1;
 }
 .skill_1--level {
-    grid-area: 2 / 2 / 3 / 3;
+    grid-area: 2 / 3 / span 1 / span 1;
     background-color: #8f8;
 }
 .skill_1--text {
-    grid-area: 2 / 3 / 3 / 7;
+    grid-area: 2 / 4 / span 1 / span 3;
+    font-size: 75%;
 }
 
 /* HABILIDAD 2 */
 .skill_2--img {
-    grid-area: 3 / 1 / 4 / 2;
+    grid-area: 3 / 2 / span 1 / span 1;
 }
 .skill_2--level {
-    grid-area: 3 / 2 / 4 / 4;
+    grid-area: 3 / 3 / span 1 / span 2;
     background-color: #fd4;
 }
 .skill_2--text {
-    grid-area: 3 / 4 / 4 / 7;
+    grid-area: 3 / 5 / span 1 / span 2;
+    font-size: 75%;
 }
 
 /* HABILIDAD 3 */
 .skill_3--img {
-    grid-area: 4 / 1 / 5 / 2;
+    grid-area: 4 / 2  / span 1 / span 1;
 }
 .skill_3--level {
-    grid-area: 4 / 2 / 5 / 5;
+    grid-area: 4 / 3 / span 1 / span 3;
     background-color: #f88;
 }
 .skill_3--text {
-    grid-area: 4 / 5 / 5 / 6;
+    grid-area: 4 / 6 / span 1 / span 1;
+    font-size: 75%;
 }
 
 /* HABILIDAD 4 */
 .skill_4--img {
-    grid-area: 5 / 1 / 6 / 2;
+    grid-area: 5 / 2  / span 1 / span 1;
 }
 .skill_4--level {
-    grid-area: 5 / 2 / 6 / 7;
+    grid-area: 5 / 3 / span 1 / span 4;
     background-color: #f33;
 }
 .skill_4--text {
     grid-area: 5 / 3 / 6 / 4;
+    font-size: 75%;
     display: none;
 }
